@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>log in</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>iwith <sub>log in</sub></h1>
+        <hr>
+        <a href="index.html">home</a>
+        <a href="register.html">register</a>
+        <a href="login.html">log in</a>
+        <a href="products_list.html">products list</a>
+        <hr>
+        <form action='login.do' method='POST'>
+            <p>
+                <label for="uid">會員帳號</label>
+                <input type="text" name="userid" id='uid' placeholder="請輸入信箱" required>
+            </p>
+            <p>
+                <label for='pwd1'>會員密碼</label>
+                <input type='password' name='password1' id='pwd1' placeholder="請輸入密碼" required minlength="6" maxlength="20"></p>
+            <input type="submit" value="確定登入" name="submit">
+    </body>
+</html>
