@@ -1,18 +1,30 @@
 <html>
     <head>
-        <title>register</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>register</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+          $( function() {
+            $( ".datepicker" ).datepicker({
+              changeMonth: true,
+              changeYear: true
+            });
+          } );
+          </script>
     </head>
     <body>
-        <h1>iwith <sub>register</sub></h1>
+        <h1>iwith <sub>sign up</sub></h1>
         <hr>
         <a href="index.html">home</a>
-        <a href="register.html">register</a>
+        <a href="sign_up.html">sign up</a>
         <a href="login.html">log in</a>
         <a href="products_list.html">products list</a>
         <hr>
-        <form action='login.do' method='POST'>
+        <form action='signup.do' method='POST'>
             <p>
                 <img src="images/check.jpg">
             </p>
@@ -41,7 +53,7 @@
             </p>
             <p>
                 <label for='birthday'>出生日期</label>
-                <input type='date' name='birthday' id='birthday' placeholder="2014-09-18" required>
+                <input class="datepicker" type='date' name='birthday' id='birthday' required>
             </p>
             <input type="submit" value="確定註冊" name="submit">
         </form>
