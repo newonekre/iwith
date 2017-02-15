@@ -2,6 +2,10 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* end reset */
 
+.clearfix{
+    clear: both;
+}
+
 body{
     margin:center;
     font-family: Lato Light;
@@ -34,18 +38,28 @@ body .header .header-content{
 .header ul{
     color: white;
     float: right;
+    
 }
 .header ul li{
     float: left;
-    padding-left: 57px;
+    padding-left: 40px;
     line-height: 99px;
 }
 .header ul a{
     color: white;
-    text-decoration: none;  
+    text-decoration: none;
+    border: 2px #fff solid;
+    padding: 10px 30px;
+    border-radius: 20px;
 }
+
+.header ul a:hover{
+    color: white;
+    background-color: #2C3E50;
+    
+}
+
 .main-picture{
-    height: 140px;
     background: white;
     position: relative; 
     float: left;
@@ -76,14 +90,13 @@ body .header .header-content{
 .main-content age{
     font: left;
 }
-.steps li{
-    border-radius: 50px;
-    width: 80px;
-    height: 80px;
-    background-color: white;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-    text-align:center;
-    line-height:80px;
+.homepage-about section{
+    float: left;
+    padding-left: 20px;
 }
+#pageFooter{
+    text-align:center;
+    position: bottom;
+    margin-top: 35px;
+}
+
