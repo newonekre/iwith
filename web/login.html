@@ -2,27 +2,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>log in</title>
+        <title>login</title>
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     </head>
     <body>
-        <h1>iwith <sub>log in</sub></h1>
-        <hr>
-        <a href="index.html">home</a>
-        <a href="sign_up.html">sign up</a>
-        <a href="login.html">log in</a>
-        <a href="products-list.html">products list</a>
-        <hr>
-        <form action='login.do' method='POST'>
-            <p>
-                <label for="uid">會員帳號</label>
-                <input type="text" name="userid" id='uid' placeholder="請輸入信箱" required>
-            </p>
-            <p>
-                <label for='pwd1'>會員密碼</label>
-                <input type='password' name='password1' id='pwd1' placeholder="請輸入密碼" required minlength="6" maxlength="20"></p>
-            <input type="submit" value="確定登入
-            " name="submit">
-    </body>
-</html>
+        <div class="header">
+            <div class="header-content"> 
+                <img class="logo" src="images/iwith.svg" />
+                <h1><a href="index.html">iwith</a>
+                    <form action='login.do' method='POST'>
+                        <p>
+                            <label for="uid">會員帳號</label>
+                            <input type="text" name="userid" id='uid' placeholder="請輸入信箱" required>
+                        </p>
+                        <p>
+                            <label for='pwd1'>會員密碼</label>
+                            <input type='password' name='password1' id='pwd1' placeholder="請輸入密碼" required minlength="6" maxlength="20"></p>
+                        <input type="submit" value="確定登入
+                               " name="submit">
+                        </body>
+                        </html>
