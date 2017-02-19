@@ -11,26 +11,25 @@ body{
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serifneue;
     font-size: 16px;
 }
-body .header .header-content{
+body .header .headerContent{
     max-width: 1000px;
     margin: 0 auto;
 }
 .header{
     background-color: #F64157;
-    height: 99px;
+    height: 60px;
 }
 .header .logo{
-    height: 71px;
-    width: 65px;
+    height: 30px;
     float: left;
-    padding-top: 14px;
+    padding-top: 15px;
 }
 .header h1 a{
     font-family:Lato;
     font-size: 30px;
     color: #FFFFFF;
     text-align: center;
-    line-height: 99px;
+    line-height: 60px;
     float: left;
     padding-left: 20px;
     text-decoration: none;
@@ -42,14 +41,14 @@ body .header .header-content{
 .header ul li{
     float: left;
     padding-left: 40px;
-    line-height: 99px;
+    line-height: 60px;
 }
 .header ul a{
     color: white;
     text-decoration: none;
-    border: 2px #fff solid;
-    padding: 10px 30px;
-    border-radius: 20px;
+    border: 1.5px #fff solid;
+    padding: 9px 15px;
+    border-radius: 8px;
     transition: background-color .25s;
 }
 

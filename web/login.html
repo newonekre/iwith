@@ -1,25 +1,32 @@
 <html>
     <head>
+        <title>Lon in</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>login</title>
         <link href="style.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     </head>
     <body>
+        <!-- Header -->
         <div class="header">
             <div class="header-content"> 
                 <img class="logo" src="images/iwith.svg" />
-                <h1><a href="index.html">iwith</a>
-                    <form action='login.do' method='POST'>
-                        <p>
-                            <label for="uid">會員帳號</label>
-                            <input type="text" name="userid" id='uid' placeholder="請輸入信箱" required>
-                        </p>
-                        <p>
-                            <label for='pwd1'>會員密碼</label>
-                            <input type='password' name='password1' id='pwd1' placeholder="請輸入密碼" required minlength="6" maxlength="20"></p>
-                        <input type="submit" value="確定登入
-                               " name="submit">
-                        </body>
-                        </html>
+                <h1><a href="index.html">iwith.it</a></h1>
+            </div>
+        </div>
+        <p>Log in</p>
+        <form action="login.do" method="POST">
+            <p>
+                <label for="uid">會員帳號</label>
+                <input type="text" name="userid" id="uid" required>
+            </p>
+            <p>
+                <label for="pwd">會員密碼</label>
+                <input type="text" name="password" id="pwd" required>
+            </p>
+            <input type="submit" value="Log in" name="submit">
+            <hr></hr>
+            <a href="">Forgot password?</a>
+            <p>Don't have an account? <a href="register.html">Sign up</a></p>
+        </form>
+    </body>
+</html>
