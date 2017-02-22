@@ -9,16 +9,17 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body> 
-        <div class="header">
+        <!-- Header -->
+        <header class="header">
             <div class="header-content"> 
-                <img class="logo" src="images/logo.svg" />
+                <a href="index.jsp"><img class="logo" src="images/logo.svg" /></a>
                 <h1><a href="index.jsp">iwith.it</a></h1>
                 <ul>
                     <li><a href="register.jsp">Sign Up</a></li>
                     <li><a href="login.jsp">Log In</a></li>
                 </ul>
-            </div>  
-        </div>
+            </div>
+        </header>
         <form action="register.do" method="POST">
         <p class="text">
             <span>
