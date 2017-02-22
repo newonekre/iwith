@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <title>Lon in</title>
@@ -7,10 +8,11 @@
     </head>
     <body>
         <!-- Header -->
-        <div class="header">
+         <div class="header">
             <div class="header-content"> 
                 <img class="logo" src="images/iwith.svg" />
-                <h1><a href="index.html">iwith.it</a></h1>
+                <h1><a href="index.jsp">iwith.it</a></h1>
+                <%@include file="nav.jsp" %>
             </div>
         </div>
         <p>Log in</p>

@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -11,11 +12,8 @@
         <div class="header">
             <div class="header-content"> 
                 <img class="logo" src="images/iwith.svg" />
-                <h1><a href="index.html">iwith.it</a></h1>
-                <ul>
-                    <li><a href="register.html">Sign Up</a></li>
-                    <li><a href="login.html">Log In</a></li>
-                </ul>
+                <h1><a href="index.jsp">iwith.it</a></h1>
+                <%@include file="nav.jsp" %>
             </div>
         </div>
         <div class="main-picture">

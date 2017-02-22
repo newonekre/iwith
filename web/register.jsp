@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -11,7 +12,7 @@
         <div class="header">
             <div class="header-content"> 
                 <img class="logo" src="images/iwith.svg" />
-                <h1><a href="index.html">iwith.it</a></h1></div></div>
+                <h1><a href="index.jsp">iwith.it</a></h1></div></div>
         <form action="register.do" method="POST">
         <p class="text">
             <span>
