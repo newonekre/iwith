@@ -11,41 +11,18 @@
         <!-- Header -->
         <div class="header">
             <div class="header-content"> 
-                <img class="logo" src="images/iwith.svg" />
+                <a href="index.jsp"><img class="logo" src="images/logo.svg" /></a>
                 <h1><a href="index.jsp">iwith.it</a></h1>
-                <%@include file="nav.jsp" %>
+                <ul>
+                    <li><a href="register.jsp">Sign Up</a></li>
+                    <li><a href="login.jsp">Log In</a></li>
+                </ul>
             </div>
         </div>
         <div class="main-picture">
-            <div class="main-picture-images" style="background-image: url(images/p01.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p02.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p03.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p04.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p05.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p06.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p07.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p08.jpeg);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p09.jpeg);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p10.jpeg);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p11.jpeg);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p12.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p13.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p14.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p15.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p16.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p17.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p18.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p19.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p20.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p21.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p22.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p23.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p24.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p25.png);"></div>
-            <div class="main-picture-images" style="background-image: url(images/p26.png);"></div>
-
-            <!-- <img src="images/p01.png" /> -->
-
+            <%for(int i=1; i<27; i++){%>
+                    <div class="main-picture-images" style="background-image: url(<% out.print("/iwith/images/p"+i+".png");%>)"></div>
+                <%}%>
             <div class="main-content-container">
                 <div class="main-content">
                     <h1>The people are waiting to meet you in</h1>

@@ -11,8 +11,14 @@
     <body> 
         <div class="header">
             <div class="header-content"> 
-                <img class="logo" src="images/iwith.svg" />
-                <h1><a href="index.jsp">iwith.it</a></h1></div></div>
+                <img class="logo" src="images/logo.svg" />
+                <h1><a href="index.jsp">iwith.it</a></h1>
+                <ul>
+                    <li><a href="register.jsp">Sign Up</a></li>
+                    <li><a href="login.jsp">Log In</a></li>
+                </ul>
+            </div>  
+        </div>
         <form action="register.do" method="POST">
         <p class="text">
             <span>
@@ -42,7 +48,7 @@
             <div class="g-recaptcha" data-sitekey="6LfIHxYUAAAAAKzHMtVdgqetsf7BvGs0bV2JlnYs"></div>
             <p><input type="submit" value="Next"></p>
         <input type="submit" value="submit" name="submit"></p>
-        <p>Already have an account? <a href="login.html">Log in</a></p>
+        <p>Already have an account? <a href="login.jsp">Log in</a></p>
         </form>
     </body>
 </html>

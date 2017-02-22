@@ -10,9 +10,12 @@
         <!-- Header -->
          <div class="header">
             <div class="header-content"> 
-                <img class="logo" src="images/iwith.svg" />
+                <img class="logo" src="images/logo.svg" />
                 <h1><a href="index.jsp">iwith.it</a></h1>
-                <%@include file="nav.jsp" %>
+                <ul>
+                    <li><a href="register.jsp">Sign Up</a></li>
+                    <li><a href="login.jsp">Log In</a></li>
+                </ul>
             </div>
         </div>
         <p>Log in</p>
