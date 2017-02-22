@@ -4,12 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>iwith.it</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(function () {
+                $(".main-content select").selectmenu();
+            });
+        </script>
     </head>
     <body>
         <!-- Header -->
-        <div class="header">
+        <header class="header">
             <div class="header-content"> 
                 <a href="index.jsp"><img class="logo" src="images/logo.svg" /></a>
                 <h1><a href="index.jsp">iwith.it</a></h1>
@@ -18,32 +25,36 @@
                     <li><a href="login.jsp">Log In</a></li>
                 </ul>
             </div>
-        </div>
+        </header>
         <div class="main-picture">
-            <%for(int i=1; i<27; i++){%>
-                    <div class="main-picture-images" style="background-image: url(<% out.print("/iwith/images/p"+i+".png");%>)"></div>
-                <%}%>
+            <%for (int i = 1; i < 27; i++) {%>
+            <div class="main-picture-images" style="background-image: url(<% out.print("/iwith/images/p" + i + ".png");%>)"></div>
+            <%}%>
             <div class="main-content-container">
                 <div class="main-content">
-                    <h1>The people are waiting to meet you in</h1>
-                    <label for="search-gender">I'm looking for</label>
-                    <select>
-                        <option>female</option>
-                        <option>male</option>
-                    </select>
-                    <label for="age">between</label>
-                    <select>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                    </select>
-                    <label for="to">to</label>
-                    <select>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                    </select>
-                    <button>See your matches</button>
+                    <form action="register.jsp">
+                        <h1>The people are waiting to meet you in</h1>
+                        <div>
+                        <label for="search-gender">I'm looking for</label>
+                        <select name="gender">
+                            <option>female</option>
+                            <option>male</option>
+                        </select>
+                        </div>
+                        <div>
+                        <label for="age">between</label>
+                        <select name="age-from">
+                            <option value="18">18</option>
+                        </select>
+                        <label for="to">to</label>
+                        <select name="age-to">
+                            <option value="18">18</option>
+                        </select>
+                        </div>
+                        <div>
+                        <button>See your matches</button>
+                        </div>
+                    </form>
                 </div>
                 <!-- end main-content -->
             </div>
@@ -70,7 +81,8 @@
             <div class="clearfix"></div>
         </section>
         <footer id="pageFooter">
-            design and code © iwith.it 2017
+            <a href="index.jsp"><img class="logo" src="images/logo.svg" /></a>
+            <p>design and code &#169; iwith.it 2017</p>
         </footer>
     </body>
 </html>
