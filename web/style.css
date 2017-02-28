@@ -2,168 +2,183 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* end reset */
 
-.clearfix{
-    clear: both;
+body{
+    font-family: 'Lato', sans-serif;   
 }
 
-body{
-    margin:center;
-    font-family: lato;
-    font-size: 16px;
-    
-}
-body .header .headerContent{
-    max-width: 1240px;
-    margin: 0 auto;
-}
 .header{
     height: 85px;
-    background: #0269FF; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left, #0269FF , #33FFC9); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #0269FF, #33FFC9); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #0269FF, #33FFC9); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #0269FF , #33FFC9); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left,#0269FF,#33FFC9);
 }
+
 .header .logo{
-    height: 60px;
     float: left;
-    padding-top: 13px;
-    padding-left: 40px;
+    padding-top: 17.5px;
+    padding-left: 98px;
+    height: 50px;  
 }
-.header h1 a{
-    font-family:Lato light;
-    font-size: 30px;
-    color: #FFFFFF;
+
+.header-content span{
+    font-size: 26px;
+    color: white;
     text-align: center;
-    line-height: 93px;
     float: left;
     padding-left: 40px;
+    line-height: 90px; 
     text-decoration: none;
 }
+
 .header ul{
     color: white;
     float: right;
-    padding-right: 40px;
+    padding-right: 98px;
 }
+
 .header ul li{
     float: left;
-    padding-left: 40px;
-    line-height: 85px;
-    
+    padding-left: 50px;
+    line-height: 85px;  
 }
+
 .header ul a{
     color: white;
     text-decoration: none;
     border: 1.5px solid;
-    padding: 10px 40px;
-    border-radius: 15px;
+    padding: 13px 32px;
+    border-radius: 50px;
     transition: background-color .25s;
     font-family:Lato light;
-    font-size: 20px;
 }
 
 .header ul a:hover{
     color: white;
-    border-color: rgba(255,255,255,0);
-    background-color: rgba(255,255,255,0.3); 
+    border-color: rgba(0,116,255,100);
+    background-color: rgba(0,116,255,100); 
 }
-.main-picture-images{
-    width: 145px;
-    height: 145px;
-    background-size: cover;
-    background-position: center center;
+
+/*頭----------------------------------------------------------------------*/
+.city{
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 98px;
+    padding-top: 30px;
+    color: #4A4A4A;
 }
+
+#cityname{
+    font-weight: 400;
+    font-size: 26px;
+    background: -webkit-linear-gradient(#3023AE, #C96DD8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*顯示城市區--------------------------------------------------------------------*/
+.search{
+    padding: 30px 0px 30px 98px;    
+}
+
+.search label{
+    font-size: 20px;
+    font-weight: 300;
+    color: #4A4A4A;
+}
+.search button{
+    margin-left: 14px;
+}
+
+/*選項區--------------------------------------------------------------------*/
 .main-picture{
     overflow:hidden;
     background: white;
-    position: relative; 
-    float: left;
+    position: relative;
     text-align: center;
     position: relative;
-    margin-top: 10px;
-    height: 430px;
 }
-.main-picture div{
+
+.main-picture-images{
+    width: 260px;
+    height: 260px;
+    background-size: cover;
+    background-position: center center;
+    border: 0px rgba(255,255,255,1) solid;
+    border-radius: 2px;
+    transition: border .35s;
+    box-sizing: border-box;
+}
+.main-picture-images:hover{
+    border-width: 15px;
+}
+
+.main-picture .person{
+    font-weight: 300;
     display: inline-block;
-    padding: relative;
     margin: 5px;
+    text-align: left;
 }
-.main-content-container{
-    position: absolute;
-    top: 85px;
-    left: 0px;
-    width: 100%;
-}   
-.main-content{
-    line-height: 2;
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 45%;
-    min-width: 390px;
-    margin: 0 auto;
-    padding: 20px;
-    border:1px;
-    padding:10px 10px;
-    border-radius: 80px;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
-    font-family: Lato light;
+
+.person .main-picture-images{
+    margin-bottom: 10px;
 }
-.main-content h1{
-    font-size: 30px;
+
+.person .location{
+    margin: 10px 0 0 0;
 }
-.main-content label{
-    font-size: 20px;
-    margin: 30px;
-    font-family: lato;
+
+.overflow {
+    height: 200px;
 }
-.ui-selectmenu-button.ui-button{
-    width: auto;
+
+/*照片區-----------------------------------------------------------------------*/
+.explain{
+    text-align: center;
     background-color: white;
-    border-color: lightgray;
 }
-.main-content div{
-    margin-top: 8px;
+
+.explain .stream{
+    padding: 1%;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    margin: 100px auto;
+
 }
-.main-content button{
-    color: #0269FF;
-    display:block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    border: 1.5px solid;
-    padding: 10px 40px;
-    border-radius: 15px;
-    transition: background-color .25s;
-    font-family:Lato;
-    font-size: 20px;
-    background-color: transparent;
+.explain .stream img{
+    margin-bottom: 10px;
 }
-.main-content button:hover{
-    border-color:#0269FF;
-    color: white;
-    background-color: #0269FF; 
+.explain .stream h3{
+    font-weight: 400; 
 }
-.homepage-about section{
-    float: left;
-    padding-left: 20px;
-    max-width: 22%;
+.explain .stream p{
+    margin-top: 10px; 
+    font-weight: 300;
 }
-.homepage-about h3{
-    margin-top: 20px;
-    color: #F64157;
+
+/*使用說明----------------------------------------------------------------------*/
+
+#footer .logo{
+    padding-top: 30px;
 }
-.homepage-about p{
-    margin-top: 10px;
-    word-wrap: break-word;
-}
-#pageFooter {
+
+#footer {
     text-align:center;
-    background: #0269FF;  
+    background: #026AFF; 
 }
-#pageFooter p{
+
+#footer p{
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
 }
-footer .logo{
-    padding-top: 30px;
+
+/*尾----------------------------------------------------------------------*/
+.clearfix{
+    clear: both;
 }
+
+.clearfix{
+    clear:both;
+}
+
+
+

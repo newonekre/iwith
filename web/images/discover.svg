@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="149px" height="149px" viewBox="0 0 149 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Cross Hairs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="86.0906863%" id="linearGradient-1">
+            <stop stop-color="#0269FF" offset="0%"></stop>
+            <stop stop-color="#33FFC9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-2">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C96DD8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="iwith" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-491.000000, -1905.000000)">
+            <g id="discover" transform="translate(492.162243, 1906.000000)">
+                <g id="Cross-Hairs" transform="translate(0.000000, 0.271386)">
+                    <path d="M0.146848345,73.5 C0.146848345,113.946534 33.0534662,146.853152 73.5,146.853152 C113.946534,146.853152 146.853152,113.946534 146.853152,73.5 C146.853152,33.0534662 113.946534,0.146848345 73.5,0.146848345 C33.0534662,0.146848345 0.146848345,33.0534662 0.146848345,73.5 Z" id="Fill-1" stroke="url(#linearGradient-1)"></path>
+                    <path d="M74.206,91.006 L74.206,82.874 C74.206,82.407 73.827,82.028 73.36,82.028 C72.892,82.028 72.513,82.407 72.513,82.874 L72.513,91.006 C63.444,90.576 56.143,83.276 55.713,74.206 L63.845,74.206 C64.313,74.206 64.691,73.827 64.691,73.36 C64.691,72.892 64.313,72.513 63.845,72.513 L55.713,72.513 C56.143,63.444 63.444,56.143 72.513,55.713 L72.513,63.845 C72.513,64.313 72.892,64.691 73.36,64.691 C73.827,64.691 74.206,64.313 74.206,63.845 L74.206,55.713 C83.276,56.143 90.576,63.444 91.006,72.513 L82.874,72.513 C82.407,72.513 82.028,72.892 82.028,73.36 C82.028,73.827 82.407,74.206 82.874,74.206 L91.006,74.206 C90.576,83.276 83.276,90.576 74.206,91.006 M73.36,54 C62.685,54 54,62.685 54,73.36 C54,84.035 62.685,92.719 73.36,92.719 C84.035,92.719 92.719,84.035 92.719,73.36 C92.719,62.685 84.035,54 73.36,54" id="Fill-1" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

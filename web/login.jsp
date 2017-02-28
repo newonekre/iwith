@@ -7,17 +7,8 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-         <!-- Header -->
-        <header class="header">
-            <div class="header-content"> 
-                <a href="index.jsp"><img class="logo" src="images/logo.svg" /></a>
-                <h1><a href="index.jsp">iwith.it</a></h1>
-                <ul>
-                    <li><a href="register.jsp">Sign Up</a></li>
-                    <li><a href="login.jsp">Log In</a></li>
-                </ul>
-            </div>
-        </header>
+        <jsp:include page="/WEB-INF/header.jsp" />
+        <div class="clearfix"></div>
         <p>Log in</p>
         <form action="login.do" method="POST">
             <p>
@@ -31,7 +22,7 @@
             <input type="submit" value="Log in" name="submit">
             <hr>
             <a href="">Forgot password?</a>
-            <p>Don't have an account? <a href="register.html">Sign up</a></p>
+            <p>Don't have an account? <a href="register.jsp">Sign up</a></p>
         </form>
     </body>
 </html>
