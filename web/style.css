@@ -7,15 +7,15 @@ body{
 }
 
 .header{
-    height: 85px;
+    height: 56px;
     background: -webkit-linear-gradient(left,#0269FF,#33FFC9);
 }
 
 .header .logo{
     float: left;
-    padding-top: 17.5px;
+    padding-top: 14px;
     padding-left: 98px;
-    height: 50px;  
+    height: 30px;  
 }
 
 .header-content span{
@@ -24,7 +24,7 @@ body{
     text-align: center;
     float: left;
     padding-left: 40px;
-    line-height: 90px; 
+    line-height: 62px; 
     text-decoration: none;
 }
 
@@ -37,14 +37,15 @@ body{
 .header ul li{
     float: left;
     padding-left: 50px;
-    line-height: 85px;  
+    line-height: 62px;  
 }
 
 .header ul a{
+    cursor: pointer;
     color: white;
     text-decoration: none;
     border: 1.5px solid;
-    padding: 13px 32px;
+    padding: 5px 20px;
     border-radius: 50px;
     transition: background-color .25s;
     font-family:Lato light;
@@ -55,8 +56,39 @@ body{
     border-color: rgba(0,116,255,100);
     background-color: rgba(0,116,255,100); 
 }
+.sidebar{
+    position: fixed;
+    right: -320px;
+    top: 0px;
+    width: 320px;
+    background-color: #0269FF;
+    display: block;
+    height: 100%;
+    transition: all 1s;
+    z-index:1;
+}
+.sidebar .x{
+  cursor: pointer;
+  float: left;
+  margin: 20px 0px 0px 20px;
+  height: 20px;
+}
+.sidebar h2{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+.sidebar.open{
+  right: 0px;
+}
+.sidebar .accordion{
+    margin-top: 20px;
+}
 
-/*頭----------------------------------------------------------------------*/
+
+
 .city{
     font-size: 20px;
     font-weight: 300;
@@ -97,17 +129,17 @@ body{
 }
 
 .main-picture-images{
-    width: 260px;
-    height: 260px;
-    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-size: 260px;
     background-position: center center;
-    border: 0px rgba(255,255,255,1) solid;
+    border: 0px #eff3f6 solid;
     border-radius: 2px;
     transition: border .35s;
     box-sizing: border-box;
 }
 .main-picture-images:hover{
-    border-width: 15px;
+    border-width: 10px;
 }
 
 .main-picture .person{
@@ -162,7 +194,7 @@ body{
 
 #footer {
     text-align:center;
-    background: #026AFF; 
+    background: black; 
 }
 
 #footer p{
