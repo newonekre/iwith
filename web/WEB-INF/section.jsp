@@ -35,7 +35,7 @@
 <div class="main-picture">
     <%for (int i = 1; i < 25; i++) {%>
     <div class="person">
-        <div class="main-picture-images" style="background-image: url(<% out.print("/iwith/images/p" + i + ".png");%>)"></div>
+        <div class="main-picture-images" style="background-image: url(<% out.print("images/p" + i + ".png");%>)"></div>
         <div class="name">john <span class="age">24 y</span></div>
         <div class="location">Taipei</div>  
     </div>

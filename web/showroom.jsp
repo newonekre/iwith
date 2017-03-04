@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <%@ include file="include.jsp"%>
+        <%@ include file="include.jsp" %>
         <title>Show room</title>
     </head>
     <body>
-      <jsp:include page="/WEB-INF/section.jsp" />
-       <%@include  file="/WEB-INF/footer.jsp" %>
+        <jsp:include page="WEB-INF/header.jsp" />
+        <jsp:include page="WEB-INF/section.jsp" />
+        <%@include  file="WEB-INF/footer.jsp" %>
     </body>
 </html>

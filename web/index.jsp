@@ -3,10 +3,10 @@
 <html>
     <head>
         <title>iwith.it</title>
-        <%@ include file="include.jsp"%>
+        <%@ include file="include.jsp" %>
     </head>
     <body>
-        <jsp:include page="/WEB-INF/header.jsp" />
+        <jsp:include page="WEB-INF/header.jsp" />
 
         <div class="main">
             <div class="sexycouple">
@@ -23,8 +23,8 @@
             </div>  
         </div>
         
-        <jsp:include page="/WEB-INF/section.jsp" />
+        <jsp:include page="WEB-INF/section.jsp" />
         
-        <%@include  file="/WEB-INF/footer.jsp" %>
+        <%@include  file="WEB-INF/footer.jsp" %>
     </body>
 </html>

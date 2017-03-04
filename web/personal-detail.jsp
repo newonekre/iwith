@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Personal Detail</title>
-        <%@ include file="include.jsp"%>
+        <%@ include file="include.jsp" %>
     </head>
     <body>
         <img src="/iwith/images/p21.png"/>
@@ -14,7 +14,7 @@
             This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
         <button>Reservation</button>
 
-        <jsp:include page="/WEB-INF/section.jsp" />
+        <jsp:include page="WEB-INF/section.jsp" />
 
     </body>
 </html>
