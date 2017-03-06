@@ -3,95 +3,139 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* end reset */
 
 body{
-    font-family: 'Lato', sans-serif; 
-    
-}
-#header{
-    style:"max-width:1500px";
+    font-family: "Lato", "Helvetico Neue"; 
+
 }
 .clearfix{
     clear: both;
 }
 
-#header .container{
-    width: 900px;
-    margin: 0 auto;
+.main{
+    position:fixed;
+    width: 100%; 
+    height: 100%;
     
+}
+
+.main .fillWidth{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 177.7777778vh;
+    min-width: 100%;
+    min-height: 56.25vw;
+}
+
+.main .sexycouple{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/sexycouple.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.main .sexycouple img{
+    width: 100%;
+}
+
+#header-container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 4;
+    transition: 0.7s;
+    
+}
+.show{
+    background-color: rgba(255,255,255,1);
+}
+
+#header{
+    z-index: 3;
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #logo{
     float: left;
-    padding-top: 46px;
 }
+
+#logo img{
+    height: 35px;
+}
+
 
 nav{
     float: right;
-    padding-top: 60px;
+    padding-top: 7px;
 }
 
 nav li{
     display: inline;
+    vertical-align: middle;
+    line-height: 20px;
 }
+
 nav a{
-    padding: 0 10px;
+    text-decoration: none;  
 }
 
-ul{
-    float: left;
+.signin{
+    color: black;
 }
 
-.main{
-    position:relative;
-    margin: 0 auto;
-    width: 900px;
-    height: 500px;  
-}
-.main .sexycouple{
-    position: absolute;
-    top: 50px;
-    left: 0px;
+.signin:hover{
+    background: -webkit-linear-gradient(#3023AE, #C96DD8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.main .sexycouple img{
-    width: 450px;
+.faq{
+    cursor: pointer; 
 }
+
+.faq img{
+    height: 20px;
+    padding-right: 35px;
+    vertical-align: middle;
+}
+
+.faq img:hover{
+    transform: scale(1.2);
+}
+
 .tital{
+    font-weight: 400;
     position: absolute;
-    top: 48px;
-    right:35px;
+    text-align: center;
+    width: 100%;
+    top: 250px;
+    margin: 0 auto;
+    color: white;
 }
+
 .tital h1{
-    position: absolute;
-    width: 400px;
-    right: 0px;
-    font-family: bodoni;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 45px;
+}
+
+.tital strong{
+    background: -webkit-linear-gradient(#FFFFFF, #6623AE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tital p{
-    width: 400px;
-    margin-top: 170px;
-    font-family: bodoni;
-    font-size: 18px;
-}
-
-
-.main .biglogo img{
-    position: absolute;
-    top: 250px;
-    right: 0px;
-    height: 500px;     
-}
-
-
-.faq{
-    cursor: pointer;
-    color: #9B9B9B;
-}
-
-.faq:hover{
-    color: #44474F;
+    font-size: 20px;
 }
 
 .sidebar{
@@ -103,7 +147,7 @@ ul{
     display: block;
     height: 100%;
     transition: all 1s;
-    z-index:1;
+    z-index: 5;
 }
 .sidebar .close-key{
     cursor: pointer;
@@ -127,7 +171,7 @@ ul{
 
 .sidebar .accordion{
     margin-top: 20px;
-    
+
 }
 
 .ui-state-default{
@@ -144,100 +188,99 @@ ul{
 }
 
 .city{
+    position: relative;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     padding-left: 98px;
-    padding-top: 30px;
-    color: #4A4A4A;
+    padding-top: 100vh;
+    color: black;
+    z-index: 2;
 }
 
 #cityname{
     font-weight: 400;
-    font-size: 26px;
-    background: -webkit-linear-gradient(#3023AE, #C96DD8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    color: black;
 }
 
-.search{
-    padding: 30px 0px 30px 98px;    
-}
+    .search{
+        position: relative;
+        padding: 30px 0px 30px 98px; 
+        color: black;
+        font-weight: 400;
+    }
 
-.search label{
-    font-size: 20px;
-    font-weight: 300;
-    color: #4A4A4A;
-}
-.search button{
-    margin-left: 14px;
-}
-
-/*選項區--------------------------------------------------------------------*/
-.main-picture{
-    overflow:hidden;
-    background: white;
-    position: relative;
-    text-align: center;
-    position: relative;
-}
-
-.main-picture-images{
-    width: 200px;
-    height: 200px;
-    background-size: 260px;
-    background-position: center center;
-    border: 0px #eff3f6 solid;
-    border-radius: 2px;
-    transition: border .35s;
-    box-sizing: border-box;
-}
-.main-picture-images:hover{
-    border-width: 10px;
-}
-
-.main-picture .person{
-    font-weight: 300;
-    display: inline-block;
-    margin: 5px;
-    text-align: left;
-}
-
-.person .main-picture-images{
-    margin-bottom: 10px;
-}
-
-.person .location{
-    margin: 10px 0 0 0;
-}
-
-.overflow {
-    height: 200px;
-}
-
-/*照片區-----------------------------------------------------------------------*/
-#footer .logo{
-    padding-top: 30px;
-}
-
-#footer {
-    text-align:center;
-    background: black; 
-}
-
-#footer p{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: white;
-}
-
-/*尾----------------------------------------------------------------------*/
-.clearfix{
-    clear: both;
-}
-
-.clearfix{
-    clear:both;
-}
+    .search label{
+        font-size: 20px;
 
 
+    }
+    .search button{
+        margin-left: 14px;
+    }
 
+
+    .main-picture{
+        overflow:hidden;
+        background: white;
+        position: relative;
+        text-align: center;
+        position: relative;
+    }
+
+    .main-picture-images{
+        width: 200px;
+        height: 200px;
+        background-size: 260px;
+        background-position: center center;
+        border: 0px #eff3f6 solid;
+        border-radius: 2px;
+        transition: border .35s;
+        box-sizing: border-box;
+    }
+    .main-picture-images:hover{
+        border-width: 10px;
+    }
+
+    .main-picture .person{
+        font-weight: 300;
+        display: inline-block;
+        margin: 5px;
+        text-align: left;
+    }
+
+    .person .main-picture-images{
+        margin-bottom: 10px;
+    }
+
+    .person .location{
+        margin: 10px 0 0 0;
+    }
+
+    .overflow {
+        height: 200px;
+    }
+
+    #footer {
+        position: absolute;
+        text-align:center;
+        background-color: gainsboro;
+        width: 100%; 
+    }
+    
+    #footer .logo{
+        padding-top: 30px;
+        height: 35px;
+    }
+
+    #footer p{
+        font-weight: 400;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: black;
+        font-size: 14px;
+    }
+    
+    /*@media screen and (max-width: 480px) {
+       
+    }*/
