@@ -8,10 +8,16 @@
 <script type="text/javascript">
     $(function () {
 
-    
-
-        $('.message a').click(function () {
-            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+       $(".signin, .person").click(function () {
+           $(".login-page").fadeIn();
+       });
+        
+       $(".close").click(function () {
+           $(".login-page").fadeOut();
+       });
+        
+        $(".message a").click(function () {
+            $("form").animate({height: "toggle", opacity: "toggle"}, "slow");
         });
 
         $(window).on('scroll', function () {
