@@ -2,9 +2,11 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* end reset */
 
-body{
-    font-family: "Lato", "Helvetico Neue"; 
-
+body {
+    background: white;  
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
 }
 .clearfix{
     clear: both;
@@ -14,7 +16,7 @@ body{
     position:fixed;
     width: 100%; 
     height: 100%;
-    
+
 }
 
 .main .fillWidth{
@@ -51,7 +53,7 @@ body{
     width: 100%;
     z-index: 4;
     transition: 0.7s;
-    
+
 }
 .show{
     background-color: rgba(255,255,255,1);
@@ -95,7 +97,7 @@ nav a{
 }
 
 .signin:hover{
-    background: -webkit-linear-gradient(#3023AE, #C96DD8);
+    background: -webkit-linear-gradient(#948449, #FFC900);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -174,6 +176,104 @@ nav a{
 
 }
 
+
+.login-page{
+    width:360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form{
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3), 0 5px 5px 0 rgba(0,0,0,0.24);
+}
+
+.form input {
+    font-family: "Lato";
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Lato";
+    text-transform: uppercase;
+    outline: 0;
+    background: #948449;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+    background: #AE9C5C;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #AE9C5C;
+    text-decoration: none;
+}
+
+.form .register-form {
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+.container .info span .fa {
+    color: #EF3B3A;
+}
+
 .ui-state-default{
     border: 0px;
 }
@@ -192,7 +292,6 @@ nav a{
     font-size: 20px;
     font-weight: 400;
     padding-left: 98px;
-    padding-top: 100vh;
     color: black;
     z-index: 2;
 }
@@ -203,84 +302,84 @@ nav a{
     color: black;
 }
 
-    .search{
-        position: relative;
-        padding: 30px 0px 30px 98px; 
-        color: black;
-        font-weight: 400;
-    }
+.search{
+    position: relative;
+    padding: 30px 0px 30px 98px; 
+    color: black;
+    font-weight: 400;
+}
 
-    .search label{
-        font-size: 20px;
-
-
-    }
-    .search button{
-        margin-left: 14px;
-    }
+.search label{
+    font-size: 20px;
 
 
-    .main-picture{
-        overflow:hidden;
-        background: white;
-        position: relative;
-        text-align: center;
-        position: relative;
-    }
+}
+.search button{
+    margin-left: 14px;
+}
 
-    .main-picture-images{
-        width: 200px;
-        height: 200px;
-        background-size: 260px;
-        background-position: center center;
-        border: 0px #eff3f6 solid;
-        border-radius: 2px;
-        transition: border .35s;
-        box-sizing: border-box;
-    }
-    .main-picture-images:hover{
-        border-width: 10px;
-    }
 
-    .main-picture .person{
-        font-weight: 300;
-        display: inline-block;
-        margin: 5px;
-        text-align: left;
-    }
+.main-picture{
+    overflow:hidden;
+    background: white;
+    position: relative;
+    text-align: center;
+    position: relative;
+}
 
-    .person .main-picture-images{
-        margin-bottom: 10px;
-    }
+.main-picture-images{
+    width: 200px;
+    height: 200px;
+    background-size: 260px;
+    background-position: center center;
+    border: 0px #eff3f6 solid;
+    border-radius: 2px;
+    transition: border .35s;
+    box-sizing: border-box;
+}
+.main-picture-images:hover{
+    border-width: 10px;
+}
 
-    .person .location{
-        margin: 10px 0 0 0;
-    }
+.main-picture .person{
+    font-weight: 300;
+    display: inline-block;
+    margin: 5px;
+    text-align: left;
+}
 
-    .overflow {
-        height: 200px;
-    }
+.person .main-picture-images{
+    margin-bottom: 10px;
+}
 
-    #footer {
-        position: absolute;
-        text-align:center;
-        background-color: gainsboro;
-        width: 100%; 
-    }
-    
-    #footer .logo{
-        padding-top: 30px;
-        height: 35px;
-    }
+.person .location{
+    margin: 10px 0 0 0;
+}
 
-    #footer p{
-        font-weight: 400;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        color: black;
-        font-size: 14px;
-    }
-    
-    /*@media screen and (max-width: 480px) {
-       
-    }*/
+.overflow {
+    height: 200px;
+}
+
+#footer {
+    position: absolute;
+    text-align:center;
+    background-color: whitesmoke;
+    width: 100%; 
+}
+
+#footer .logo{
+    padding-top: 30px;
+    height: 35px;
+}
+
+#footer p{
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+    font-size: 14px;
+}
+
+/*@media screen and (max-width: 480px) {
+   
+}*/

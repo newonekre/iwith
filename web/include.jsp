@@ -7,15 +7,22 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>
 <script type="text/javascript">
     $(function () {
-        $(window).on('scroll', function(){
-            if($(window).scrollTop() > 1){
+
+    
+
+        $('.message a').click(function () {
+            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 1) {
                 $("#header-container").addClass("show");
-            }else{
+            } else {
                 $("#header-container").removeClass("show");
             }
         });
-        
-        
+
+
         $(".accordion").accordion({
             collapsible: true
         });
@@ -113,7 +120,7 @@
 
         });
     }
-    
+
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">

@@ -28,8 +28,6 @@
         <p>tonight you can choice who you want to be...</p>
     </div>
 
-</div>
-
 <jsp:include page="WEB-INF/section.jsp" />
 
 <%@include  file="WEB-INF/footer.jsp" %>

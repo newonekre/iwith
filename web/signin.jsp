@@ -6,19 +6,22 @@
     </head>
     <body>
         <jsp:include page="WEB-INF/header.jsp" />
-        <form action="showroom.jsp" method="POST">
-            <p>
-                <label for="uid">會員帳號</label>
-                <input type="text" name="userid" id="uid" required>
-            </p>
-            <p>
-                <label for="pwd">會員密碼</label>
-                <input type="password" name="password" id="pwd" required minlength="6" maxlength="20">
-            </p>
-            <input type="submit" value="Sign in" name="submit">
-            <hr>
-            <a href="forgot-password.jsp">Forgot password?</a>
-            <p>Don't have an account?</p><a href="register.jsp">Sign up</a>
-        </form>
+        <div class="login-page">
+            <div class="form">
+                <form class="register-form" action="showroom.jsp" method="POST">
+                    <input type="text" placeholder="name"/>
+                    <input typr="password" placeholder="password"/>
+                    <input type="text"  placeholder="email address"/>
+                    <button>create</button>
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                </form>
+                <form class="login-form" action="showroom.jsp" method="POST">
+                    <input type="text" placeholder="username"/>
+                    <input type="password" placeholder="password"/>
+                    <button>login</button>
+                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

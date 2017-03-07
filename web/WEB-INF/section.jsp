@@ -9,7 +9,6 @@
     </select>
     <label for="age">between</label>
     <select class="age" name="age-from">
-
         <% for (int i = 18; i < 101; i++) {
                 if (i == 20) {
                     out.print("<option selected=\"selected\">" + i + "</option>");
@@ -20,7 +19,6 @@
     </select>
     <label for="to">to</label>
     <select class="age" name="age-to">
-
         <% for (int i = 18; i < 101; i++) {
                 if (i == 30) {
                     out.print("<option selected=\"selected\">" + i + "</option>");
@@ -30,7 +28,6 @@
             }%>
     </select>
     <button class="go" href="showroom.jsp">Go</button>
-
 </div>
 <div class="main-picture">
     <%for (int i = 1; i < 25; i++) {%>
