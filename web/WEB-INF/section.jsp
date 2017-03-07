@@ -29,7 +29,7 @@
                 }
             }%>
     </select>
-    <button class="go">Go</button>
+    <button class="go" href="showroom.jsp">Go</button>
 
 </div>
 <div class="main-picture">
