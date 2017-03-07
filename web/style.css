@@ -94,6 +94,7 @@ nav a{
 
 .signin{
     color: black;
+    cursor: pointer;
 }
 
 .signin:hover{
@@ -114,6 +115,10 @@ nav a{
 
 .faq img:hover{
     transform: scale(1.2);
+}
+
+.faq.animation{
+
 }
 
 .tital{
@@ -139,6 +144,7 @@ nav a{
 .tital p{
     font-size: 20px;
 }
+
 
 .sidebar{
     position: fixed;
@@ -178,10 +184,15 @@ nav a{
 
 
 .login-page{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     width:360px;
-    padding: 8% 0 0;
-    margin: auto;
+    display: none;
 }
+
 
 .form{
     position: relative;
@@ -195,7 +206,6 @@ nav a{
 }
 
 .form input {
-    font-family: "Lato";
     outline: 0;
     background: #f2f2f2;
     width: 100%;
@@ -207,7 +217,6 @@ nav a{
 }
 
 .form button {
-    font-family: "Lato";
     text-transform: uppercase;
     outline: 0;
     background: #948449;
@@ -238,6 +247,15 @@ nav a{
 
 .form .register-form {
     display: none;
+}
+
+.close{
+    cursor: pointer;
+    color: lightgrey;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 12px;
 }
 
 .container {
@@ -287,11 +305,22 @@ nav a{
     border-color: #9CAFC3;
 }
 
+
+.containerShow{
+    padding-top: 100vh;
+}
+
+.containerCitySearch{
+    position:relative;
+    padding-top: 30px;
+    background-color: white;
+}
+
 .city{
+    text-align: center;
     position: relative;
     font-size: 20px;
     font-weight: 400;
-    padding-left: 98px;
     color: black;
     z-index: 2;
 }
@@ -327,34 +356,64 @@ nav a{
     position: relative;
 }
 
-.main-picture-images{
-    width: 200px;
-    height: 200px;
-    background-size: 260px;
-    background-position: center center;
-    border: 0px #eff3f6 solid;
-    border-radius: 2px;
-    transition: border .35s;
-    box-sizing: border-box;
-}
-.main-picture-images:hover{
-    border-width: 10px;
+.main-picture a{
+    text-decoration: none;
 }
 
-.main-picture .person{
+.main-picture-images{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 280px;
+    height: 440px;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0px #eff3f6 solid;
+
+}
+.person:hover{
+    transition: box-shadow .35s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.person{
+    position: relative;
+    width: 280px;
+    height: 440px;
     font-weight: 300;
     display: inline-block;
     margin: 5px;
     text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.person .main-picture-images{
-    margin-bottom: 10px;
+.overlay{
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 280px;
+    height: 440px;
+    transition: .35s;
+    opacity: 0;
 }
 
-.person .location{
-    margin: 10px 0 0 0;
+.overlay:hover{
+    opacity: 0.8;
 }
+
+.text{
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
 
 .overflow {
     height: 200px;
