@@ -6,6 +6,10 @@
         <%@ include file="include.jsp" %>
     </head>
     <body>
+        <div id="header-container">
+            <jsp:include page="WEB-INF/header.jsp" />
+        </div>
+        
         <img src="/iwith/images/p21.png"/>
         <h2>John Ko.Holyshit</h2>
         <h3>computer engineer</h3>
