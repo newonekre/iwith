@@ -191,6 +191,7 @@ nav a{
     -ms-transform: translate(-50%, -50%);
     width:360px;
     display: none;
+    z-index: 9;
 }
 
 

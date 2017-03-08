@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <title>Product List</title>
         <%@ include file="include.jsp" %>
-        <title>Show room</title>
     </head>
     <body>
-        <jsp:include page="WEB-INF/header.jsp" />
+        <div id="header-container">
+            <jsp:include page="WEB-INF/header.jsp" />
+        </div>
 
         <div class="city">The people are waiting to meet you in <span id="cityname"></span></div>
         <div class="search">
@@ -35,13 +37,13 @@
                         }
                     }%>
             </select>
-            <button class="go" href="showroom.jsp">Go</button>
+            <button class="go">Go</button>
         </div>
         
         <div class="main-picture">
             <%for (int i = 1; i < 25; i++) {%>
-            <a href="personal-detail">
-                <div class="person" href="personal-detail.jsp">
+            <a href="personal-detail.jsp">
+                <div class="person">
                     <div class="main-picture-images" style="background-image: url(<% out.print("images/p" + i + ".png");%>)"></div>
                     <div class="overlay">
                         <div class="text">Hello I'm ko, just come back from isis</div>

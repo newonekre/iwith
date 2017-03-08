@@ -56,7 +56,7 @@
                                     }
                                 }%>
                         </select>
-                        <button class="go" href="showroom.jsp">Go</button>
+                        <button>Go</button>
                     </div>
                 </div>
 
@@ -77,15 +77,15 @@
                 
         <div class="login-page">
             <div class="form">
-                <form class="register-form" action="showroom.jsp" method="POST">
+                <form class="register-form" action="product-list.jsp" method="POST">
                     <input type="text" placeholder="name"/>
                     <input typr="password" placeholder="password"/>
                     <input type="text"  placeholder="email address"/>
                     <button>create</button>
                     <p class="message">Already registered? <a href="#">Sign In</a></p>
                 </form>
-                <form class="login-form" action="showroom.jsp" method="POST">
-                    <input type="text" placeholder="username"/>
+                <form class="login-form" action="product-list.jsp" method="POST">
+                    <input type="text" placeholder="email address"/>
                     <input type="password" placeholder="password"/>
                     <button>login</button>
                     <p class="message">Not registered? <a href="#">Create an account</a></p>
