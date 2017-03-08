@@ -4,34 +4,22 @@
     <head>
         <title>cart</title>
         <%@ include file="include.jsp" %>
-        
+
     </head>
     <body>
         <div id="header-container">
             <jsp:include page="WEB-INF/header.jsp" />
         </div>
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
+
         <div id="article">
-            <form action="update_cart.do" method="POST">
-                
+            <form action="check-out.jsp" method="POST">
+
                 <table boder="1">
                     <caption>Shopping List</caption>
                     <thead>
                         <tr>
-                            <th>No.</th><th>Photo</th><th>price</th><th>hour</th>
+                            <th>No.</th><th>Photo</th><th>price</th><th>hour</th><th>delete</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -39,6 +27,7 @@
                             <td>photo-link</td>
                             <td>TWD$8000</td>
                             <td>4</td>
+                            <td><input type='checkbox' name='delete'></td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -48,12 +37,12 @@
                         </tr>
                     </tfoot>
                 </table>
-                
-                <input type="button" value="check out" onclick="checkOut()">
-                
+
+                <button>Proceed to checkout</button>
+
             </form>
-            
+
         </div>
-        
+
     </body>
 </html>
