@@ -18,7 +18,7 @@
                     <caption>Shopping List</caption>
                     <thead>
                         <tr>
-                            <th>No.</th><th>Photo</th><th>price</th><th>hour</th><th>delete</th>
+                            <th> No. </th><th> Photo </th><th> price </th><th>reservation date</th><th> strat time </th><th> order hour </th><th> delete </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -26,6 +26,8 @@
                             <td>1</td>
                             <td>photo-link</td>
                             <td>TWD$8000</td>
+                            <td>2017/8th/March</td>
+                            <td>3:00pm</td>
                             <td>4</td>
                             <td><input type='checkbox' name='delete'></td>
                         </tr>
