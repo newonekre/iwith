@@ -193,23 +193,6 @@ th {
     margin: 20px 0px 0px 20px;
     height: 20px;
 }
-/*header 頁面 第20~23欄*/
-/*.sidebar form{
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: white;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition:  width 0.4s ease-in-out;
-}
-
-.sidebar input[type=text]:focus {
-    width: 100%;
-}*/
 
 .sidebar h2{
     text-align: center;
@@ -490,13 +473,13 @@ th {
     font-size: 14px;
 }
 
-ul {
+#calendars ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-ul li {
+#calendars ul li {
     display: inline-block;
     width: 120px;
     margin: 10px;

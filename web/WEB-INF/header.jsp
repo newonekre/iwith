@@ -17,10 +17,7 @@
     <img class="close-key" src="images/close-key.svg">
     <h2>FAQ</h2>
     
-    <!--增加收尋功能  待處理中.....-->
-<!--    <form>
-        <input type="text" name="search" placeholder="Search...">
-    </form>-->
+
     
     <div class="accordion">
         <h3>新手指南</h3>
