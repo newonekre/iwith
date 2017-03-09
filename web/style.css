@@ -3,7 +3,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* end reset */
 
 body {
-    background: white;  
+    background: green;  
     font-family: "lato", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;      
@@ -11,6 +11,8 @@ body {
 .clearfix{
     clear: both;
 }
+
+
 
 .main{
     position:fixed;
