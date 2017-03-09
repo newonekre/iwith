@@ -6,10 +6,10 @@
         <%@ include file="include.jsp" %>
     </head>
     <body>
-         <div id="header-container">
+        <div id="header-container">
             <jsp:include page="WEB-INF/header.jsp" />
         </div>
-        
+
          <form action="forgot-password.jsp" method="POST">
             <p>
                 <label for="Email">Email</label>
