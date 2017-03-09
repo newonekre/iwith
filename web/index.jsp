@@ -27,69 +27,69 @@
         </div>
 
         <div class="containerShow">
-            <form action="signin.jsp" method="POST">
-                <div class="containerCitySearch">
-                    <div class="city">The people are waiting to meet you in <span id="cityname"></span></div>
-                    <div class="search">
-                        <label for="search-gender">I'm looking for</label>
-                        <select name="gender">
-                            <option>female</option>
-                            <option>male</option>
-                        </select>
-                        <label for="age">between</label>
-                        <select class="age" name="age-from">
-                            <% for (int i = 18; i < 101; i++) {
-                                    if (i == 20) {
-                                        out.print("<option selected=\"selected\">" + i + "</option>");
-                                    } else {
-                                        out.print("<option>" + i + "</option>");
-                                    }
-                                }%>
-                        </select>
-                        <label for="to">to</label>
-                        <select class="age" name="age-to">
-                            <% for (int i = 18; i < 101; i++) {
-                                    if (i == 30) {
-                                        out.print("<option selected=\"selected\">" + i + "</option>");
-                                    } else {
-                                        out.print("<option>" + i + "</option>");
-                                    }
-                                }%>
-                        </select>
-                        <button>Go</button>
-                    </div>
+            <div class="containerCitySearch">
+                <div class="city">The people are waiting to meet you in <span id="cityname"></span></div>
+                <div class="search">
+                    <label for="search-gender">I'm looking for</label>
+                    <select name="gender">
+                        <option>female</option>
+                        <option>male</option>
+                    </select>
+                    <label for="age">between</label>
+                    <select class="age" name="age-from">
+                        <% for (int i = 18; i < 86; i++) {
+                                if (i == 20) {
+                                    out.print("<option selected=\"selected\">" + i + "</option>");
+                                } else {
+                                    out.print("<option>" + i + "</option>");
+                                }
+                            }%>
+                    </select>
+                    <label for="to">to</label>
+                    <select class="age" name="age-to">
+                        <% for (int i = 18; i < 86; i++) {
+                                if (i == 30) {
+                                    out.print("<option selected=\"selected\">" + i + "</option>");
+                                } else {
+                                    out.print("<option>" + i + "</option>");
+                                }
+                            }%>
+                    </select>
+                    <button class="signin">Go</button>
                 </div>
+            </div>
 
-                <div class="main-picture">
-                    <%for (int i = 1; i < 25; i++) {%>
-                    <a>
-                        <div class="person">
-                            <div class="main-picture-images" style="background-image: url(<% out.print("images/p" + i + ".png");%>)"></div>
-                            <div class="overlay">
-                                <div class="text">Hello I'm ko, just come back from isis</div>
-                            </div>
+
+            <div class="main-picture">
+                <%for (int i = 1; i < 25; i++) {%>
+                <a>
+                    <div class="person">
+                        <div class="main-picture-images" style="background-image: url(<% out.print("images/p" + i + ".png");%>)"></div>
+                        <div class="overlay">
+                            <div class="text">Hello I'm ko, just come back from isis</div>
                         </div>
-                    </a>
-                    <%}%>
-                </div>
-            </form>
+                    </div>
+                </a>
+                <%}%>
+            </div>
+
         </div>
-                
-                
-        <div class="login-page">
+
+
+        <div class="signin-page">
             <div class="form">
                 <form class="register-form" action="product-list.jsp" method="POST">
                     <input type="text" placeholder="name"/>
                     <input typr="password" placeholder="password"/>
                     <input type="text"  placeholder="email address"/>
                     <button>create</button>
-                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                    <p class="message">Already registered? <a>Sign In</a></p>
                 </form>
                 <form class="login-form" action="product-list.jsp" method="POST">
                     <input type="text" placeholder="email address"/>
                     <input type="password" placeholder="password"/>
                     <button>login</button>
-                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                    <p class="message">Not registered? <a>Create an account</a></p>
                 </form>
                 <span class="close">x</span>
             </div>

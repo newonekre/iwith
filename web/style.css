@@ -3,7 +3,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* end reset */
 
 body {
-    background: green;  
+    background: white;  
     font-family: "lato", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;      
@@ -213,7 +213,7 @@ th {
 }
 
 
-.login-page{
+.signin-page{
     position:fixed;
     top: 50%;
     left: 50%;
@@ -272,6 +272,7 @@ th {
 }
 
 .form .message a {
+    cursor: pointer;
     color: #AE9C5C;
     text-decoration: none;
 }
@@ -606,6 +607,7 @@ time.icon .week {
 
 .profile-image1{
     text-align: center;
+    padding-top: 20px;
 }
 
 .profile-image1 img{

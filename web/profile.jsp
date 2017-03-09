@@ -10,7 +10,7 @@
         <div id="header-container">
             <jsp:include page="WEB-INF/header.jsp" />
         </div>
-        
+
         <form class="schedule" action="schedule.jsp" method="POST">
             <figure class="profile">
                 <div class="profile-image"><img src="images/p3.png" alt="p3"/></div>
@@ -34,6 +34,7 @@
                 <img src="images/p3.png" alt="p9" />
             </div>
         </form>
+        
         
 
         <%@include  file="WEB-INF/footer.jsp" %>
