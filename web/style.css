@@ -494,8 +494,29 @@ th {
     cursor: pointer;
 }
 
-#calendars li:hover{
-    transition: box-shadow .35s;
+.icon .time-selector{
+    position: fixed;
+    width: 120px;
+    display: none;
+    background-color: white;
+    z-index: 10;
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    
+}
+
+.shadow{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.icon input{
+    width: 114px;
+}
+
+.icon{
+    transition: box-shadow 0.35s;
+}
+
+.icon:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -514,7 +535,6 @@ time.icon {
 
 time.icon * {
     display:block;
-    width:100%;
     font-weight:700;
     font-style:normal;
     text-align:center;
@@ -604,21 +624,6 @@ time.icon .week {
     background: #AE9C5C;
 }
 
-
-.profile-image1{
-    text-align: center;
-    padding-top: 20px;
-}
-
-.profile-image1 img{
-    width: 200px;
-    padding: auto;
-}
-
-.profile button{
-    padding: 15px;
-}
-
 .profile {
     position: relative;
     margin: 0 auto;
@@ -663,6 +668,20 @@ time.icon .week {
 .profile-image1 img:hover{
     transition: box-shadow .35s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.profile-image1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.profile-image1 img{
+    width: 200px;
+    padding: auto;
+}
+
+.profile button{
+    padding: 15px;
 }
 
 .profile figcaption {

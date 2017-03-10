@@ -4,21 +4,21 @@
     <head>
         <title>check out</title>
         <%@ include file="include.jsp" %>
-        
+
     </head>
     <body>
-         <div id="header-container">
+        <div id="header-container">
             <jsp:include page="WEB-INF/header.jsp" />
         </div>
-        
-         <div id="article">
-            <form action="" method="POST">
-                
+
+        <div id="article">
+            <form action="check-out.jsp" method="POST">
+
                 <table boder="1">
-                    <caption>check out</caption>
+                    <caption>Shopping List</caption>
                     <thead>
                         <tr>
-                            <th> No. </th><th> Photo </th><th> price </th><th>reservation date</th><th> strat time </th><th> order hour </th>
+                            <th> No. </th><th> Photo </th><th> price </th><th>reservation date</th><th> strat time </th><th> order hour </th><th> delete </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,6 +29,7 @@
                             <td>2017/8th/March</td>
                             <td>3:00pm</td>
                             <td>4</td>
+                            <td><input type='checkbox' name='delete'></td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -38,13 +39,12 @@
                         </tr>
                     </tfoot>
                 </table>
-                
-                <button>Place your order</button>
-              
-                
+
+                <button>Proceed to checkout</button>
+
             </form>
-            
+
         </div>
-        
+
     </body>
 </html>

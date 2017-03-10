@@ -1,12 +1,68 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="style.css" rel="stylesheet" type="text/css">
-<link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+
+<script src="jquery.timepicker.min.js"></script>
+<link href="jquery.timepicker.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>
 <script type="text/javascript">
     $(function () {
+        
+        $('.icon input').click(function(){
+          return false;
+        });
+        
+        $("#timeFrom").timepicker();
+        $(".timeTo").timepicker({
+            "minTime": "10:00am",
+            "maxTime": "11:00pm",
+            "showDuration": true
+        });
+
+        $(".timeFrom").on("changeTime", function () {
+            var date = $(".timeFrom").timepicker('getTime');
+            var hour = date.getHours();
+            var newDate = new Date(date.getTime());
+            newDate.setHours(hour + 1);
+            
+            $(".timeTo").timepicker('option', 'minTime', newDate);
+            $(".timeTo").timepicker('option', 'durationTime', date);
+            $(".timeTo").timepicker('option', 'showDuration', true);
+            console.log(date);
+        });
+        
+        
+        
+        $(".icon").click(function () {
+            // if this not open{
+            //  close everything
+            //  open this
+            // }
+            // 
+            // if this is open{
+            //  close this
+            // }
+            if($(this).hasClass("shadow")){
+                $(this).find(".time-selector").slideUp();
+                $(this).removeClass("shadow");
+            }else{
+                $(this).addClass("shadow");
+                $(".time-selector").slideUp();
+                $(this).find(".time-selector").slideDown();
+            }
+            
+//            $(".time-selector").slideUp();
+//            $(this).toggleClass("shadow");
+//            $(".time-selector, .icon").removeClass("shadow");
+//            if($(this).hasClass("shadow")){
+//                $(this).find(".time-selector").slideToggle();
+    
+        });
+        
+        
 
         $(".signin, .person").click(function () {
             $(".signin-page").fadeIn();
@@ -51,7 +107,7 @@
         });
 
         $(".search button").button();
-        
+
         UserInfo.getInfo(function (data) {
             if (data.city.name === null) {
                 $("#cityname").html(data.country.name);
@@ -130,4 +186,3 @@
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-
