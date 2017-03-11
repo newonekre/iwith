@@ -10,11 +10,18 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>
 <script type="text/javascript">
     $(function () {
-        
-        $('.icon input').click(function(){
-          return false;
+
+
+        $('.scrolldown').click(function () {
+            $("html, body").animate({scrollTop: $(window).height()-67}, 800);
+            return false;
         });
-        
+
+
+        $('.icon input').click(function () {
+            return false;
+        });
+
         $("#timeFrom").timepicker();
         $(".timeTo").timepicker({
             "minTime": "10:00am",
@@ -27,15 +34,15 @@
             var hour = date.getHours();
             var newDate = new Date(date.getTime());
             newDate.setHours(hour + 1);
-            
+
             $(".timeTo").timepicker('option', 'minTime', newDate);
             $(".timeTo").timepicker('option', 'durationTime', date);
             $(".timeTo").timepicker('option', 'showDuration', true);
             console.log(date);
         });
-        
-        
-        
+
+
+
         $(".icon").click(function () {
             // if this not open{
             //  close everything
@@ -45,24 +52,24 @@
             // if this is open{
             //  close this
             // }
-            if($(this).hasClass("shadow")){
+            if ($(this).hasClass("shadow")) {
                 $(this).find(".time-selector").slideUp();
                 $(this).removeClass("shadow");
-            }else{
+            } else {
                 $(this).addClass("shadow");
                 $(".time-selector").slideUp();
                 $(this).find(".time-selector").slideDown();
             }
-            
+
 //            $(".time-selector").slideUp();
 //            $(this).toggleClass("shadow");
 //            $(".time-selector, .icon").removeClass("shadow");
 //            if($(this).hasClass("shadow")){
 //                $(this).find(".time-selector").slideToggle();
-    
+
         });
-        
-        
+
+
 
         $(".signin, .person").click(function () {
             $(".signin-page").fadeIn();
@@ -186,3 +193,4 @@
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Codystar|Comfortaa|Megrim" rel="stylesheet">

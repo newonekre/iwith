@@ -5,13 +5,103 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 body {
     background: white;  
     font-family: "lato", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      
+
 }
 .clearfix{
     clear: both;
 }
 
+/* 以下是Scrolldown animation */
+
+.scrolldown {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -20px;
+    width: 24px;
+    height: 24px;
+    top:83%;
+    left:50%;
+}
+
+.chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+
+
+.scrolldownText {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+    to {
+        opacity: 1;
+    }
+}
+
+/*以上是scrolldown*/
 
 
 .main{
@@ -155,24 +245,37 @@ th {
     font-weight: 400;
     position: absolute;
     color: white;
-    top: 50%;
+    top: 42%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
+
 
 .tital h1{
     font-size: 45px;
+    font-family: 'Comfortaa', cursive;
+    /*font-family: 'Megrim', cursive;*/
+    /*font-family: 'Codystar', cursive;*/
+    color: white;
+    text-shadow: 0px 0px 10px #74673E, 0px 0px 10px #74673E, 0px 0px 10px #74673E, 0px 0px 20px #74673E;
 }
 
 .tital strong{
-    background: -webkit-linear-gradient(#FFD700, #F0E68C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+    color: white;
+    text-shadow: 0px 0px 10px #FFC408, 0px 0px 10px #FFC408, 0px 0px 10px #FFC408, 0px 0px 10px #FFC408;
 }
 
 .tital p{
-    font-size: 20px;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    color: #FFF;
+    text-shadow: 0px 0px 10px #574C57, 0px 0px 10px #574C57, 0px 0px 10px #574C57, 0px 0px 10px #574C57;
+    padding-top: 10px;
+    text-align: center;
 }
 
 
@@ -500,8 +603,8 @@ th {
     display: none;
     background-color: white;
     z-index: 10;
-     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
-    
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+
 }
 
 .shadow{
@@ -604,7 +707,7 @@ time.icon .week {
 }
 
 .schedule{
-   text-align: center;
+    text-align: center;
 }
 
 .schedule button{
@@ -635,7 +738,7 @@ time.icon .week {
     font-size: 14px;
     box-shadow: none !important;
     padding-top: 79px;
-   
+
 }
 
 .profile * {

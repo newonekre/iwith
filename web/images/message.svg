@@ -18,7 +18,7 @@
                     <g id="SVGs" transform="translate(49.000000, 48.000000)">
                         <g id="message">
                             <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                            <use fill="#948449" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
                         </g>
                     </g>
                 </g>
