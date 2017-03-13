@@ -72,7 +72,7 @@
                     <div class="person">
                         <div class="main-picture-images" style="background-image: url(<% out.print("images/p" + i + ".png");%>)"></div>
                         <div class="overlay">
-                            <div class="text">Hello I'm ko, just come back from isis</div>
+                            <div class="text">NEW YORK - A defiant Manhattan federal prosecutor, A defiant Manhattan federal prosecutor</div>
                         </div>
                     </div>
                 </a>

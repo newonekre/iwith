@@ -11,7 +11,6 @@
 <script type="text/javascript">
     $(function () {
 
-
         $('.scrolldown').click(function () {
             $("html, body").animate({scrollTop: $(window).height()-67}, 800);
             return false;
@@ -22,36 +21,29 @@
             return false;
         });
 
-        $("#timeFrom").timepicker();
-        $(".timeTo").timepicker({
+        $(".time.start").timepicker();
+        $(".time.end").timepicker({
             "minTime": "10:00am",
             "maxTime": "11:00pm",
             "showDuration": true
         });
 
-        $(".timeFrom").on("changeTime", function () {
-            var date = $(".timeFrom").timepicker('getTime');
+        $(".time.start").on("changeTime", function () {
+            var date = $(this).timepicker('getTime');
             var hour = date.getHours();
             var newDate = new Date(date.getTime());
             newDate.setHours(hour + 1);
 
-            $(".timeTo").timepicker('option', 'minTime', newDate);
-            $(".timeTo").timepicker('option', 'durationTime', date);
-            $(".timeTo").timepicker('option', 'showDuration', true);
+            $(this).siblings(".time.end").timepicker('option', 'minTime', newDate);
+            $(this).siblings(".time.end").timepicker('option', 'durationTime', date);
+            $(this).siblings(".time.end").timepicker('option', 'showDuration', true);
             console.log(date);
         });
 
 
 
         $(".icon").click(function () {
-            // if this not open{
-            //  close everything
-            //  open this
-            // }
-            // 
-            // if this is open{
-            //  close this
-            // }
+           
             if ($(this).hasClass("shadow")) {
                 $(this).find(".time-selector").slideUp();
                 $(this).removeClass("shadow");

@@ -193,8 +193,8 @@ nav a{
     cursor: pointer;
 }
 
-.signin:hover{
-    background: -webkit-linear-gradient(#948449, #FFC900);
+.signin:hover span{
+    background:#FFC900;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -215,16 +215,6 @@ nav a{
 
 .faq.animation{
 
-}
-
-
-#article{
-    position: absolute;
-    color: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -525,7 +515,7 @@ th {
 }
 
 .overlay{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     left: 0px;
     top: 0px;
@@ -540,7 +530,6 @@ th {
 }
 
 .text{
-    background-color: black;
     font-size: 20px;
     top: 50%;
     left: 50%;
@@ -706,15 +695,33 @@ time.icon .week {
 
 }
 
-.schedule{
-    text-align: center;
+.content { 
+    width: 100%; 
 }
 
-.schedule button{
+.content__left { 
+    width: 100px;
+    float: left; /* [1] */
+    background-color: #fcc;
+}
+.content__middle { 
+    background-color: #cfc; 
+    overflow: auto; /* [2] */
+}
+
+.schedule{
+    float: left;
+    text-align: center;
+    width: 25%;
+
+}
+
+.schedule a{
+    display: block;
     position:relative;
     text-transform: uppercase;
     background: #948449;
-    width: 24.5%;
+    width: 100%;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
@@ -723,19 +730,18 @@ time.icon .week {
     cursor: pointer;
 }
 
-.schedule button:hover{
+.schedule a:hover{
     background: #AE9C5C;
 }
 
 .profile {
     position: relative;
-    margin: 0 auto;
-    min-width: 230px;
-    max-width: 315px;
+/*    min-width: 250px;*/
+    max-width: 320px;
     color: #000000;
     text-align: center;
     line-height: 1.4em;
-    font-size: 14px;
+    font-size: 12px;
     box-shadow: none !important;
     padding-top: 79px;
 
@@ -744,14 +750,15 @@ time.icon .week {
 .profile * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    color: white;
 }
 
 .profile-image {
     display: inline-block;
-    width: 80%;
+    width: 75%;
     position: relative;
     padding: 10px;
-    border: 2px solid #AE9C5C;
+    border:2px solid #FFFFFF;
 }
 
 .profile-image img {
@@ -761,36 +768,37 @@ time.icon .week {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
-
-
-.profile-image1{
-    margin: 0 auto;
-    text-align: center;
+.profile-image img:hover{
+    transition: box-shadow .35s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
-.profile-image1 img:hover{
+
+.p-img{
+    display: block;
+    padding-top: 67px;
+}
+
+.p-img img{
+    width: 24%;
+    margin-left: 0.5%;
+}
+
+.p-img img:hover{
+    
     transition: box-shadow .35s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
-.profile-image1{
-    text-align: center;
-    padding-top: 20px;
-}
-
-.profile-image1 img{
-    width: 200px;
-    padding: auto;
-}
 
 .profile button{
-    padding: 15px;
+    width: 100%;
 }
 
 .profile figcaption {
     width: 100%;
-    background-color: #F2F2F2;
-    padding: 125px 25px 160px;
+    background-color: #242728;
+    padding: 125px 30px 118px;
     margin-top: -100px;
 }
 
@@ -801,19 +809,27 @@ time.icon .week {
 
 .profile p {
     float: left;
-    margin: 0px 15px 6px;
-    letter-spacing: 1px;
-    color: black;
+    letter-spacing: 3px;
+    color:white;
+}
+
+.img-checkout{
+    transform: translate(130%, 60%);
+    width: 200px;
+    
+}
+
+.img-checkout img{
+    width: 200px;
+}
+
+border-co{
+    transform: translate(40%, 20%);
 }
 
 
-
-
-
-
-
-
-
-
-
-
+.order-review{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 40%;
+width: 50%;
+}
