@@ -170,7 +170,7 @@
             </ul>
 
             <form action="check-out.jsp" method="POST">
-                <button>check-out</button>
+                <button class="go ui-button ui-corner-all ui-widget">check out</button>
             </form>
         </div>
     </div>
