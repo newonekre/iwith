@@ -193,7 +193,7 @@ nav a{
     cursor: pointer;
 }
 
-.signin:hover span{
+.signin:hover{
     background:#FFC900;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -776,28 +776,15 @@ time.icon .week {
 
 .p-img{
     display: block;
-<<<<<<< Updated upstream
     padding-top: 145px;
-=======
-    padding-top: 67px;
->>>>>>> Stashed changes
 }
 
 .p-img img{
     width: 24%;
-<<<<<<< Updated upstream
     margin: 0.2%;
-    margin-top: 13px;
 }
 
 .p-img img:hover{
-=======
-    margin-left: 0.5%;
-}
-
-.p-img img:hover{
-    
->>>>>>> Stashed changes
     transition: box-shadow .35s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }

@@ -91,9 +91,10 @@
                     <button>create</button>
                     <p class="message">Already registered? <a>Sign In</a></p>
                 </form>
-                <form class="login-form" action="product-list.jsp" method="POST">
-                    <input type="text" placeholder="email address"/>
-                    <input type="password" placeholder="password"/>
+                <form class="login-form" action="login.do" method="POST">
+                    <input type="text" placeholder="email address" name="email"/>
+                    <input type="password" placeholder="password" name="password"/>
+                    <input type="hidden" placeholder="checkCode" name="checkCode" value="1234"/>
                     <button>login</button>
                     <p class="message">Not registered? <a>Create an account</a></p>
                 </form>

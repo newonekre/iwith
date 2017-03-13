@@ -15,7 +15,7 @@
             
             <div class="schedule">
                 <figure class="profile">
-                    <div class="profile-image"><img src="images/p3.png" alt="p3"/></div>
+                    <div class="profile-image"><img src="images/p10.png" alt="p3"/></div>
                     <figcaption>
                         <h3>John</h3>
                         <p>Which is worse, that everyone has his price, or that the price is always so low. But never try you never know.</p>
@@ -28,12 +28,12 @@
             </div>
 
             <div class="p-img">
-                <img src="images/p3.png" alt="p4" />
-                <img src="images/p3.png" alt="p5" />
-                <img src="images/p3.png" alt="p6" />
-                <img src="images/p3.png" alt="p7" />
-                <img src="images/p3.png" alt="p8" />
-                <img src="images/p3.png" alt="p9" />
+                <img src="images/p10.png" alt="" />
+                <img src="images/p10.png" alt="" />
+                <img src="images/p10.png" alt="" />
+                <img src="images/p10.png" alt="" />
+                <img src="images/p10.png" alt="" />
+                <img src="images/p10.png" alt="" />
             </div>
 
         </div>

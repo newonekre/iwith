@@ -7,7 +7,7 @@
         <nav>
             <ul>
                 <li><a class="faq"><img src="images/message.svg" alt class="animation"></a></li>
-                <li><a class="signin">SIGN <span>IN</span></a></li>
+                <li><a class="signin">SIGN IN</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
