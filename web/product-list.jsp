@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Product List</title>
+        <title>People</title>
         <%@ include file="include.jsp" %>
     </head>
     <body>
