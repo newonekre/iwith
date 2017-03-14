@@ -10,28 +10,21 @@
         <div id="header-container">
             <jsp:include page="WEB-INF/header.jsp" />
         </div>
-
-        <div class="img-checkout"><img src="images/p10.png"></div>
-        <table class="order-review">
-            <tbody>
-                <tr>
-                    <th><img src="images/img10.svg"></th>
-                    <th>TWD$8000</th>
-                    <th>2017/8th/March</th>
-                    <th>3:00pm</th>
-                    <th>4</th>
-                    <th><input type='checkbox' name='delete'></th>
-                </tr>
-            </tbody>  
-
-            <tfoot>
-                <tr>
-                    <td colspan="3">Total:</td>
-                    <td colspan="5">32000</td>
-                </tr>
-                <td><button type='checkbox' name='delete'/>Proceed to checkout</td>
-            </tfoot>
-
-        </table>
+        <form action="" method="POST">
+            <div class="img-checkout">
+                <h2>Check out cart</h2>
+                <img src="images/p10.png" alt="John">
+                <div class="container">
+                    <h2>2017-03-14 13:44:30</h2>
+                    <h1>You're dating to: John Coven</h1>
+                    <p class="reservationDate">Reservation date:2017/04/01</p>
+                    <p class="timeStart">Date time Start: 13:00</p>
+                    <p class="timeEnd">Date time End:17:00</p>
+                    <hr>
+                    <p class="sumCalculate">Time Total: 4 Hours  Total: NT$4000</p><br>
+                    <p><button>確定結帳</button></p>
+                </div>
+            </div>
+        </form>
     </body>      
 </html>
