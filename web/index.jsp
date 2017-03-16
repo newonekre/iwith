@@ -1,3 +1,6 @@
+<%@page import="com.iwith.service.SellerService"%>
+<%@page import="com.iwith.entity.Seller"%>
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -5,6 +8,12 @@
         <title>iwith.it</title>
         <%@ include file="include.jsp" %>
     </head>
+    <script>
+        function refreshImage() {
+            var myImg = document.getElementById("check_img");
+            myImg.src = "images/check.jpg?get=" + new Date();
+        }
+    </script>
     <body> 
         <div id="header-container">
             <jsp:include page="WEB-INF/header.jsp" />
@@ -72,7 +81,7 @@
                     <div class="person">
                         <div class="main-picture-images" style="background-image: url(<% out.print("images/p" + i + ".png");%>)"></div>
                         <div class="overlay">
-                            <div class="text">NEW YORK - A defiant Manhattan federal prosecutor, A defiant Manhattan federal prosecutor</div>
+                            <div class="text"></div>
                         </div>
                     </div>
                 </a>
@@ -94,7 +103,10 @@
                 <form class="login-form" action="login.do" method="POST">
                     <input type="text" placeholder="email address" name="email"/>
                     <input type="password" placeholder="password" name="password"/>
-                    <input type="hidden" placeholder="checkCode" name="checkCode" value="1234"/>
+                    <a href="javascript:refreshImage()"  title='點選即可更新圖片'>
+                       <img src='images/check.jpg' id='check_img'>
+                    </a>
+                    <input type="text" placeholder="checkCode" name="checkCode"  />
                     <button>login</button>
                     <p class="message">Not registered? <a>Create an account</a></p>
                 </form>
